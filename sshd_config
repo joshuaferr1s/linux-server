@@ -1,0 +1,15 @@
+# OpenSSH Config File
+
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem	sftp	/usr/lib/openssh/sftp-server
+TrustedUserCAKeys /etc/ssh/lightsail_instance_ca.pub
+
+# Edited by me
+
+Banner /etc/ssh/ssh-banner
+AllowUsers <user1> <user2> <etc>
